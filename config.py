@@ -1,8 +1,8 @@
 import  os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-APP_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
+BOT_TOKEN = "5480351563:AAF4tVGfnAmWR90ttCAfhRLOU_hW8kFCeyc"
+APP_ID = "17983098"
+API_HASH = "ee28199396e0925f1f44d945ac174f64"
 
 youtube_next_fetch = 0  # time in minute
 
