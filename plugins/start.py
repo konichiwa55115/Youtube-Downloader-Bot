@@ -5,5 +5,5 @@ from pyrogram import Client, filters, StopPropagation
 async def start(client, message):
     # return
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
-    await message.reply_text(welcomed, reply_markup=joinButton)
+    await message.reply_text(welcomed)
     raise StopPropagation
