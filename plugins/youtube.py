@@ -23,7 +23,6 @@ async def ytdl(_, message):
         pass
 
     url = message.text.strip()
-    await message.reply_chat_action("typing")
     try:
         title, thumbnail_url, formats = extractYt(url)
 
