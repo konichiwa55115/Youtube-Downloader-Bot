@@ -42,7 +42,7 @@ async def catch_youtube_dldata(c, q):
     #print(q.message.chat.id)
     # Callback Data Check
     yturl = cb_data.split("||")[-1]
-    format_id = cb_data.split("||")[-2]
+    format_id = -2
     thumb_image_path = "/app/downloads" + \
         "/" + str(q.message.chat.id) + ".jpg"
     print(thumb_image_path)
