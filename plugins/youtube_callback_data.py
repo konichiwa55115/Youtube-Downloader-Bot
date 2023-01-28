@@ -1,13 +1,8 @@
 import asyncio
 import os
-
-from pyrogram import (Client,
-                      InlineKeyboardButton,
-                      InlineKeyboardMarkup,
-                      ContinuePropagation,
-                      InputMediaDocument,
-                      InputMediaVideo,
-                      InputMediaAudio)
+from pyrogram.types.bots_and_keyboards import inline_keyboard_markup , inline_keyboard_button
+from pyrogram.types.input_media import input_media_document , input_media_video , input_media_audio
+from pyrogram import (Client, ContinuePropagation)
 
 from helper.ffmfunc import duration
 from helper.ytdlfunc import downloadvideocli, downloadaudiocli
