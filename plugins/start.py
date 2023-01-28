@@ -1,4 +1,4 @@
-from pyrogram import client, filters, StopPropagation
+from pyrogram import Client, filters, StopPropagation
 
 
 @Client.on_message(filters.command(["start"]), group=-2)
