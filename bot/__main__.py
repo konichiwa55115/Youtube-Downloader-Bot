@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import client
 import config
 
 DOWNLOAD_LOCATION = "./Downloads"
@@ -12,7 +12,7 @@ plugins = dict(
     root="plugins",
 )
 
-Client(
+client(
     "YouTubeDlBot",
     bot_token=BOT_TOKEN,
     api_id=APP_ID,
