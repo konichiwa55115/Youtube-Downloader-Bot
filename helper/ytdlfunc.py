@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from pyrogram import Client, filters, StopPropagation
-from pyrogram.types.bots_and_keyboards import inline_keyboard_markup , inline_keyboard_button
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardButton
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardMarkup
 import youtube_dl
 from utils.util import humanbytes
 import asyncio
@@ -9,10 +10,10 @@ import asyncio
 def buttonmap(item):
     quality = item['format']
     if "audio" in quality:
-        return [inline_keyboard_button(f"{quality} 🎵 {humanbytes(item['filesize'])}",
+        return [InlineKeyboardButton(f"{quality} 🎵 {humanbytes(item['filesize'])}",
                                      callback_data=f"ytdata||audio||{item['format_id']}||{item['yturl']}")]
     else:
-        return [inline_keyboard_button(f"{quality} 📹 {humanbytes(item['filesize'])}",
+        return [InlineKeyboardButton(f"{quality} 📹 {humanbytes(item['filesize'])}",
                                      callback_data=f"ytdata||video||{item['format_id']}||{item['yturl']}")]
 
 # Return a array of Buttons
