@@ -1,7 +1,10 @@
 import asyncio
 import os
-from pyrogram.types.bots_and_keyboards import inline_keyboard_markup , inline_keyboard_button
-from pyrogram.types.input_media import input_media_document , input_media_video , input_media_audio
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup 
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
+from pyrogram.types.input_media.input_media_document import InputMediaDocument
+from pyrogram.types.input_media.input_media_video import InputMediaVideo
+from pyrogram.types.input_media.input_media_audio import InputMediaAudio
 from pyrogram import (Client, ContinuePropagation)
 
 from helper.ffmfunc import duration
