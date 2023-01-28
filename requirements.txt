@@ -1,5 +1,5 @@
 ffmpeg
-Pyrogram==1.2.9
+Pyrogram
 TgCrypto
 youtube-dl
 wget
