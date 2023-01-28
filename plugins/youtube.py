@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, filters
-from pyrogram.types.bots_and_keyboards import inline_keyboard_markup , inline_keyboard_button
+from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup 
+from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
 from bot import user_time
 from config import youtube_next_fetch
 from helper.ytdlfunc import extractYt, create_buttons
@@ -33,7 +34,7 @@ async def ytdl(_, message):
     except Exception:
         await message.reply_text("`Failed To Fetch Youtube Data... 😔 \nPossible Youtube Blocked server ip \n#error`")
         return
-    buttons = inline_keyboard_markup(list(create_buttons(formats)))
+    buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
     sentm = await message.reply_text("Processing Youtube Url 🔎 🔎 🔎")
     try:
         # Todo add webp image support in thumbnail by default not supported by pyrogram
