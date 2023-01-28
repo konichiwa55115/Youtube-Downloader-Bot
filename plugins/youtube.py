@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
-from pyrogram import Client, filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import Client, filters
+from pyrogram.types.bots_and_keyboards import inline_keyboard_markup , inline_keyboard_button
 from bot import user_time
 from config import youtube_next_fetch
 from helper.ytdlfunc import extractYt, create_buttons
