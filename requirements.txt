@@ -1,7 +1,7 @@
 ffmpeg
 Pyrogram
 TgCrypto
-youtube-dl
+yt-dlp
 wget
 pillow
 hachoir
