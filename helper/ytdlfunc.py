@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 from pyrogram import Client, filters, StopPropagation
 from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
 from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
-import youtube_dl
+import yt_dlp
 from utils.util import humanbytes
 import asyncio
 
